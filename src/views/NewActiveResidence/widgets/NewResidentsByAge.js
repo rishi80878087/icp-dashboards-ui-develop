@@ -39,8 +39,6 @@ function getTooltip(isRtl, intl) {
 function NewResidentsByAge({ filters, isRtl }) {
   const intl = useIntl();
 
-  // api call
-
   const { execute, status, value } = useAsync({
     asyncFunction: getResidentsByAgeRange,
   });
