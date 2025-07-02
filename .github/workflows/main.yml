@@ -1,0 +1,18 @@
+name: Build and test
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 18.18.1
+      - run: curl https://ifconfig.me    
+      - run: npm config set registry https://npr.saal.ai
+      - run: yarn install
+      - run: yarn run lint
+      - run: yarn run build 

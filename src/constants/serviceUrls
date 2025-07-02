@@ -1,0 +1,6 @@
+const SERVICE_URL = {
+  IRP:'/irp/',
+  KEYCLOAK_WRAPPER : '/keycloak-wrapper/',
+}
+
+export default SERVICE_URL;

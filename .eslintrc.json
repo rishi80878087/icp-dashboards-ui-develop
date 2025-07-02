@@ -1,0 +1,10 @@
+{
+  "extends": ["next", "next/core-web-vitals"],
+  "rules": {
+    // Your custom rules here
+    "indent": ["error", 2],
+    "react/react-in-jsx-scope": "off",
+    "import/no-anonymous-default-export": "off"
+    // ... more rules
+  }
+}

@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.ant-select-dropdown{
+
+  position:relative;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+html,
+#__next,
+body {
+  max-width: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
+  max-height: 100vh;
+
+
+  .ant-input-affix-wrapper {
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px var(--colorBgContainer) inset !important;
+    }
+  }
+}
+
+
+@font-face {
+  font-family: 'sf-pro-text';
+  font-weight: 400 900;
+  src: url('./fonts/sfProText/SF-Pro.woff2') format('woff2');
+  font-display: swap;
+}
+
+
+body {
+  max-width: var(--largeDesktopPx);
+  margin: 0 auto;
+
+  .cursorPointer {
+    cursor: pointer;
+  }
+
+  #shift-optimisation-guage {
+    div[data-highcharts-chart] {
+      overflow: visible !important;
+    }
+
+    .highcharts-root {
+      overflow: visible !important;
+    }
+
+    .highcharts-container {
+      overflow: visible !important;
+    }
+  }
+
+  .arrivalDepartureSegment {
+    .ant-segmented-item-label {
+      padding-inline: 0px !important;
+    }
+  }
+
+  .settingsMenu {
+    .ant-menu-title-content {
+      margin-top: 0px !important;
+    }
+  }
+
+  .ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background-color: var(--colorBgTextActive) !important;
+  }
+
+  .ant-table-wrapper .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+  :where(.css-1j9yxvx).ant-table-wrapper .ant-table-thead>tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    border-right: 1px solid var(--colorSplit) !important;
+    background-color: var(--colorSplit) !important;
+  }
+
+  .highcharts-pivot {
+    fill: var(--colorText);
+  }
+
+  .ant-carousel:has(.carousel-dots-bottom) {
+    padding-bottom: 0px;
+  }
+
+  .highcharts-button-box {
+    fill: var(--colorBgContainer);
+    stroke: var(--colorBorder);
+  }
+
+  .highcharts-button-symbol {
+    stroke-width: 2px;
+    stroke: var(--colorText);
+  }
+
+  .highcharts-legend-item {
+    pointer-events: none;
+    /* Disable pointer events for legend items */
+  }
+
+  .highcharts-tooltip {
+    z-index: 1000 !important;
+    /* Ensure tooltip appears above other elements */
+  }
+
+  :where(.css-wabw0p).ant-input-search-rtl {
+    input {
+      max-height: 22px !important;
+    }
+  }
+
+  .screen-warning {
+    display: none;
+  }
+
+  .slick-slider {
+    overflow: hidden;
+  }
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+
+  @media screen and (max-width: 374px) {
+    .screen-warning {
+      display: flex;
+      background: rgba(0, 0, 0);
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: 1000000;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .rotate-screen-warning div {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .hoverlayer .hovertext {
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+
+    .nums {
+      white-space: normal !important;
+    }
+  }
+}
+
+.export-modal {
+  .ant-modal-content {
+    height: 100%;
+    background-color: var(--colorBgSpotlight);
+    padding: 0px;
+  }
+}
+
+.border-bottom-table-column {
+  position: relative;
+}
+
+.border-bottom-table-column::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /* start a bit inside */
+  width: 85%;
+  /* shorter width than full */
+  height: 1px;
+  background-color: var(--colorBorder);
+}
+
+.ant-tab-line .ant-tabs-nav::before {
+  border-bottom: none;
+}
+
+.table-with-header-border {
+  .ant-table-expanded-row-fixed {
+    .ant-col {
+      padding-block: 48px 0px !important;
+    }
+  }
+}
+
+.plot-container .hoverlayer .hovertext {
+  rx: 8px !important;
+  ry: 8px !important;
+}
+
+.with-input-search.ltr {
+  .ant-select-selector {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+
+    input.ant-select-selection-search-input {
+      padding-right: 12px !important;
+    }
+  }
+}
+
+.with-input-search.rtl {
+  .ant-select-selector {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+
+    input.ant-select-selection-search-input {
+      padding-left: 12px !important;
+    }
+  }
+}
+
+.with-input-search {
+  .ant-select-selector {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.legendtoggle {
+  cursor: default !important;
+}
+
+.plotly-custom-tooltip {
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    translate: 0 -50%;
+    rotate: 90deg;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #1f2937 transparent transparent transparent;
+  }
+}
+
+.js-plotly-plot {
+
+  .main-svg .hoverlayer,
+  .main-svg .infolayer {
+    display: none !important;
+  }
+}
+
+.ant-input-search-default {
+  .ant-input-affix-wrapper-rtl,
+  .ant-input-rtl {
+    max-height: 32px;
+  }
+}
+
+.table-with-total {
+  .ant-table-footer {
+    padding: 0px !important;
+  }
+  .table-for-footer {
+    .ant-table-tbody {
+      display: none;
+    }
+    
+    .ant-table-wrapper::after {
+      display: none !important;
+    }
+
+    &.ant-table-wrapper .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+    :where(.css-1j9yxvx).ant-table-wrapper .ant-table-thead>tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      border: none !important;
+      border-right: none !important;
+    }
+
+    &.ant-table-wrapper.table-default .ant-table-thead .ant-table-cell {
+      border-bottom: none !important;
+    }
+  }
+}
+
+.expanded-table {
+  &.ant-table-wrapper.table-expanded-row-bg-default .ant-table-expanded-row {
+    .ant-table-cell {
+      background: var(--colorPrimaryBg) !important;
+      padding-inline: 0px !important;
+    }
+  }
+
+  .expanded-row {
+    background: var(--colorPrimaryBgHover);
+  }
+}
